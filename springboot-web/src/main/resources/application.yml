@@ -1,0 +1,13 @@
+server:
+  #错误处理Controller的路径
+  error:
+    path: /error
+  port: 8080
+  servlet:
+    context-path: /
+    #dispatcherServlet拦截的路径
+    path: /
+  #配置tomcat uri编码
+  tomcat:
+    uri-encoding: utf-8
+  connection-timeout: 1000

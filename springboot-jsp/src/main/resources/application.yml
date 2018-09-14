@@ -1,0 +1,24 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /jsp
+spring:
+  #InternalResourceViewResolver视图解析器配置
+  mvc:
+    view:
+      prefix: /WEB-INF/
+      suffix: .jsp
+  #热部署
+  devtools:
+    restart:
+      enabled: true
+    livereload:
+      enabled: true
+  #数据源配置
+  datasource:
+    url: jdbc:mysql://localhost:3306/xmarket
+    username: root
+    password: yt1994
+    driver-class-name: com.mysql.jdbc.Driver
+mybatis:
+  mapper-locations: classpath:mapper/*
