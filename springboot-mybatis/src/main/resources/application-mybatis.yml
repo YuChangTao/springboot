@@ -1,0 +1,10 @@
+mybatis:
+  #Mybatis mapper配置文件位置
+  mapper-locations: classpath:mapper/*
+  #Mybatis外置config配置文件位置
+  #config-location: classpath:mybatis-config.xml
+  #该包下类启用别名
+  type-aliases-package: cn.yutao.entity
+  configuration:
+    #开启驼峰命名法
+    map-underscore-to-camel-case: true

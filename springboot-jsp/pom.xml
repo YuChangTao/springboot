@@ -43,34 +43,23 @@
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
 
-        <!--添加JSP支持-->
+        <!--添加JSP支持相关依赖-->
         <dependency>
             <groupId>javax.servlet</groupId>
             <artifactId>jstl</artifactId>
         </dependency>
-       <!-- <dependency>
-            &lt;!&ndash;由于Spring boot使用的内嵌的tomcat，而内嵌的tamcat是不支持jsp页面的，所有需要导入额外的包才能解决。&ndash;&gt;
+        <dependency>
+            <!--由于Spring boot使用的内嵌的tomcat，而内嵌的tamcat是不支持jsp页面的，所有需要导入额外的包才能解决。-->
             <groupId>org.apache.tomcat.embed</groupId>
             <artifactId>tomcat-embed-jasper</artifactId>
-            &lt;!&ndash;<scope>provided</scope>&ndash;&gt;
-        </dependency>-->
-        <dependency>
+            <!--<scope>provided</scope>-->
+        </dependency>
+        <!--<dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-tomcat</artifactId>
-            <!--provided表明该包只在编译和测试的时候用,打包时会将该包排除，因为要放到独立的tomcat中运行，是不需要的,-->
+            &lt;!&ndash;provided表明该包只在编译和测试的时候用,打包时会将该包排除，因为要放到独立的tomcat中运行，是不需要的,&ndash;&gt;
             <scope>provided</scope>
-        </dependency>
-
-
-        <!--引入spring-jdbc模块,使用jdbcTemplate-->
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-jdbc</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>mysql</groupId>
-            <artifactId>mysql-connector-java</artifactId>
-        </dependency>
+        </dependency>-->
 
         <!--引入slf4j+logback日志框架-->
         <dependency>
